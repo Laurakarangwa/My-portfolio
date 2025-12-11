@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laura Kwizera Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">My Portfolio!</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" onclick="toggleTheme()">🌙</button>
+      <button class="toggle-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="background.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="hero-content">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic" />
+        <h1>Laura KARANGWA KWIZERA</h1>
+        <p class="typing-text" id="typing"></p>
+        <a href="Laura_Resume.pdf" target="_blank" class="download-btn">
+          Download Resume
+        </a>
+      </div>
+    </header>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="card-grid">
+        <div class="info-card">HTML, CSS, JavaScript</div>
+        <div class="info-card">Python & Linux</div>
+        <div class="info-card">Database Management</div>
+        <div class="info-card">Data Analytics</div>
+        <div class="info-card">Photography</div>
+        <div class="info-card">Videography</div>
+        <div class="info-card">Research & Analysis</div>
+        <div class="info-card">Teamwork & Collaboration</div>
+        <div class="info-card">Public Speaking & Leadership</div>
+      </div>
+    </section>
+
+
+
+    <!-- Languages -->
+    <section id="languages">
+      <h2>Languages</h2>
+      <div class="card-grid">
+        <div class="info-card"><strong>English</strong> — Fluent</div>
+        <div class="info-card"><strong>French</strong> — Intermediate</div>
+        <div class="info-card"><strong>Kinyarwanda</strong> — Native Speaker</div>
+      </div>
+    </section>
+
+
+    <!-- Education -->
+    <section id="education">
+  <h2>Education</h2>
+
+  <div class="card">
+    <h3>African Leadership University</h3>
+    <p>Advanced Diploma in Software Engineering</p>
+    <p><strong>Expected Graduation Year:</strong> August 2027</p>
+  </div>
+
+  <div class="card">
+    <h3>FAWE Girls’ School</h3>
+    <p>High School Diploma</p>
+    <p><strong>Graduated:</strong> August 2023</p>
+  </div>
+
+  <div class="card">
+    <h3>Lycée Notre Dame de Cîteaux</h3>
+    <p>O-Level Certification</p>
+    <p><strong>Graduated:</strong> October 2019</p>
+  </div>
+    </section>
+
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2>Experience</h2>
+
+  <div class="card">
+    <h3>Intern — ASEF</h3>
+    <p><em>April 2024 – July 2025</em></p>
+    <ul>
+      <li>Mentored students on career and academic matters.</li>
+      <li>Supported tuition and academic tracking with staff.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Volunteer — ALU</h3>
+    <p><em>November 2024</em></p>
+    <ul>
+      <li>Organized cultural events and hosted a masterclass.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Enumerator — CAP LTD</h3>
+    <p><em>July 2025 - August 2025</em></p>
+    <ul>
+      <li>Conducted customer satisfaction research with Rwanda Revenue Authority.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Machine Knitter — Silk General Supply</h3>
+    <p><em>September 2023 – October 2025</em></p>
+    <ul>
+      <li>Operated knitting machinery.</li>
+      <li>Assisted with inventory & Quality Control.</li>
+    </ul>
+  </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Knitting Design Website</h3>
+          <p>Showcasing machine-knit products to clients for <strong>URUSARO FASHION HOUSE</strong>.</p>
+        </div>
+        <div class="project-card">
+          <h3>Problem Reporter</h3>
+          <p>Platform for citizens to report local issues.</p>
+        </div>
+        <div class="project-card">
+            <h3>MedPulse</h3>    
+            <p>A digital app that will be helping hospitals and patients to easly keep and access medical records.</p>   
+            <p>NB: I did this with my team, not alone</p> 
+        </div>
+        <div class="project-card">
+          <h3>Personal Portfolio</h3>
+          <p>This portfolio was built with HTML, CSS, and JavaScript.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="form-status"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Laura Karangwa Kwizera. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
